@@ -1,0 +1,10 @@
+com\example\user\demoredis\RedisMessageSubscriber.class
+com\example\user\demoredis\User.class
+com\example\user\demoredis\UserRepository.class
+com\example\user\demoredis\WebConfiguration.class
+com\example\user\demoredis\MessagePublisher.class
+com\example\user\demoredis\User$Gender.class
+com\example\user\demoredis\RedisConfig.class
+com\example\user\demoredis\RedisMessagePublisher.class
+com\example\user\demoredis\RedController.class
+com\example\user\demoredis\DemoredisApplication.class
