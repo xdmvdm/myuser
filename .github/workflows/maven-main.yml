@@ -56,7 +56,7 @@ jobs:
         run: |
           ls -la
       - name: Build Docker image
-        run: docker build -t $REPO .
+        run: docker build -t $REPO -f ./Dockerfile .
       - name: List directory Docker
         run: |
           ls -la
