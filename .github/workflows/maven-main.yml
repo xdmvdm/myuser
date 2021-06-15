@@ -57,7 +57,5 @@ jobs:
           ls -la
       - name: Build Docker image
         run: docker build -t $REPO .
-      - name: List directories
-          run: ls
       - name: Publish Docker image
         run: docker push $REPO
