@@ -61,4 +61,17 @@
         </plugins>
     </build>
 
+    <distributionManagement>
+        <repository>
+            <id>myrepository</id>
+            <url>file:C:/Users/OS/.m2/repository</url>
+        </repository>
+        <site>
+            <id>mkyongserver</id>
+
+            <url>dav:http://127.0.0.1:7777/myredis/getUser</url>
+        </site>
+    </distributionManagement>
 </project>
+
+
