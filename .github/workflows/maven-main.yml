@@ -58,7 +58,10 @@ jobs:
         run: |
           ls -la
       - name: Build Docker image
+        run: docker build -t $REPO .
+      - name: List directory Docker
         run: |
-          echo " build fazı"
-          docker build . --file Dockerfile --tag docker.io/${{ secrets.DOCKER_REPO }}
+          ls -la
+      - name: Publish Docker image
+        run: docker push $REPO
 
