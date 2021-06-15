@@ -53,12 +53,12 @@ jobs:
       - name: Login to Docker Hub
         run: docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASS }}
       - name: Display the path
-          run: echo %PATH%
+          run: echo ls
           shell: cmd
       - name: Build Docker image
         run: docker build -t $REPO .
       - name: Display the path
-          run: echo %ls%
+          run: echo ls
           shell: cmd
       - name: Publish Docker image
         run: docker push $REPO
