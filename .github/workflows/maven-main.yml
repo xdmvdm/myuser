@@ -52,13 +52,12 @@ jobs:
       - uses: actions/checkout@v1
       - name: Login to Docker Hub
         run: docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASS }}
-      - name: Display the path
-          run: echo ls
-          shell: cmd
+      - name: List directory
+        run: |
+          ls -la
       - name: Build Docker image
         run: docker build -t $REPO .
-      - name: Display the path
-          run: echo ls
-          shell: cmd
+      - name: List directories
+          run: ls
       - name: Publish Docker image
         run: docker push $REPO
